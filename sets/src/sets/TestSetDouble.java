@@ -12,30 +12,31 @@ public class TestSetDouble {
 	public static void main(String[] args) { 
 		
 
-		
+		// On instancie avec HashSet
 		HashSet<Double> dobble = new HashSet<Double>();
 		
-		   dobble.add(1.5);
-	       dobble.add(8.25);
-	       dobble.add(-7.32);
-	       dobble.add(13.3);
-	       dobble.add(-12.45);
-	       dobble.add(48.5);
-	       dobble.add(0.01);
+		dobble.add(1.5);
+	       	dobble.add(8.25);
+	       	dobble.add(-7.32);
+	       	dobble.add(13.3);
+	       	dobble.add(-12.45);
+	       	dobble.add(48.5);
+	       	dobble.add(0.01);
 	      
-	      System.out.print(dobble + " " + "\n");
+	      	System.out.print(dobble + " " + "\n");
 	      
 	      
+	      // On d√©termine le plus grand et le plus petit √©l√©ments de la collection
+	      System.out.println("Le plus grand √©l√©ment de la collection est : " + Collections.max(dobble) 
+	      + "\nLe plus petit √©l√©ment de la collection est : " + Collections.min(dobble));
 	      
-	      System.out.println("Le plus grand ÈlÈment de la collection est : " + Collections.max(dobble) 
-	      + "\nLe plus petit ÈlÈment de la collection est : " + Collections.min(dobble));
-	      
+	      // On supprime le plus petit √©l√©ment de la collection	
 	      dobble.remove(Collections.min(dobble));
 	      
-	      System.out.print("\nEn supprimant le plus petit ÈlÈment de la collection, on obtient : \n" + dobble + " " + "\n");
+	      System.out.print("\nEn supprimant le plus petit √©l√©ment de la collection, on obtient : \n" + dobble + " " + "\n");
 	  
 	      
-	      // chaque nombre nÈgatif deviendra positif gr‚ce ‡ la mÈthode Math.abs()
+	      // chaque nombre n√©gatif deviendra positif gr√¢ce √† la m√©thode Math.abs()
 	    		
 	    	
 	      HashSet <Double> dobbleTest = new HashSet<Double>();
@@ -48,7 +49,7 @@ public class TestSetDouble {
 				 }
 			}
 	    		
-	    		System.out.print("\nconversion des nombres nÈgatifs : \n" + dobbleTest);
+	    		System.out.print("\nconversion des nombres n√©gatifs : \n" + dobbleTest);
 	    	
 	}
 }
